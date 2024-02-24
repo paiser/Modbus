@@ -104,7 +104,7 @@ void *CacheThread::run_undetached(void *ptr)
 	{
 		while (exit == false)
 		{
-			//std::cout << "In cache Thread loop" << std::endl;
+			//cout << "In cache Thread loop" << endl;
 
 //
 // Read thread command
@@ -125,9 +125,9 @@ void *CacheThread::run_undetached(void *ptr)
 
 			for (unsigned long loop = 0;loop < nb_block;loop++)
 			{
-//				std::cout << "Cmd = " << data_blocks[loop].cmd_name << std::endl;
-//				std::cout << "Adr = " << data_blocks[loop].in_args[0] << std::endl;
-//				std::cout << "nb_data = " << data_blocks[loop].in_args[1] << std::endl;
+//				cout << "Cmd = " << data_blocks[loop].cmd_name << endl;
+//				cout << "Adr = " << data_blocks[loop].in_args[0] << endl;
+//				cout << "nb_data = " << data_blocks[loop].in_args[1] << endl;
 
 #ifdef _TG_WINDOWS_
 				struct _timeb now_win;
